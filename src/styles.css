@@ -1,1 +1,103 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.css";
+
+@font-face {
+  font-family: 'oswaldBold';
+  src: url('assets/font/oswald-bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'oswaldLight';
+  src: url('assets/font/oswald-light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'oswaldRegular';
+  src: url('assets/font/oswald-regular.ttf') format('truetype');
+}
+
+.header {
+  border-bottom: 20px black solid;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.question-title {
+  font-family: oswaldBold;
+  font-size: 40px;
+  padding: 0px;
+}
+
+.question-row {
+  border-bottom: 4px black solid;
+}
+
+.question {
+  margin-bottom: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 10px;
+
+}
+
+.question-active {
+  padding: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  background: #c4bfbf;
+}
+
+.question-id {
+  font-family: oswaldBold;
+  font-size: 26px;
+}
+
+.question-item {
+  font-family: oswaldRegular;
+  font-size: 26px;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.question-answer {
+  font-family: oswaldLight;
+  font-size: 24px;
+  animation: fade-in;
+  animation-duration: 1.0s;
+  -webkit-animation: fade-in 1.0s;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  padding: 4px;
+  background: yellow;
+}
+
+.times-icon {
+  font-family: oswaldBold;
+  padding: 8px;
+}
